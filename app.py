@@ -4,7 +4,7 @@ from huggingface_hub import login
 import os
 
 # Step 1: Authenticate using the Hugging Face token stored as a Space secret
-login(os.environ["HF_TOKEN"])  # Make sure you added HF_TOKEN in your Space secrets
+login(os.environ["HF_TOKEN"])  #added HF_TOKEN in your Space secrets
 
 # Step 2: Load Gemma-2-2b-it model
 model_name = "google/gemma-2-2b-it"
