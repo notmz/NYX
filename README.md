@@ -1,44 +1,47 @@
-# NYX
-NYX – A lightweight password-protected chatbot hosted on Hugging Face Spaces.
-# NYX Chatbot
+NYX – Password-Protected Chatbot on Hugging Face Spaces
 
-NYX is a conversational AI chatbot built using **Hugging Face’s Gemma-2-2b-it model**, **Transformers**, **Torch**, and **Gradio**. It allows users to chat naturally in a web interface.
+NYX is a lightweight conversational AI chatbot powered by the Gemma-2-2B-IT model, built with Transformers, PyTorch, and Gradio. It runs directly in a Hugging Face Space, providing a simple web interface for natural conversations.
 
----
+✨ Features
 
-## Features
+🤖 Conversational AI – generates friendly, coherent responses
 
-- Friendly, sensible responses
-- Runs entirely in a Hugging Face Space
-- No login required for users (token is securely stored in Secrets)
-- Simple setup for developers
+☁️ Hosted on Hugging Face Spaces – no local setup required
 
----
+🔒 Secure – developer token stored safely as a Space secret
 
-## Files
+⚡ Lightweight setup – minimal dependencies, easy deployment
 
-- `app.py` — Main chatbot code
-- `requirements.txt` — Python dependencies
-- `README.md` — This file
+📂 Project Structure
+app.py            # Main chatbot code
+requirements.txt  # Python dependencies
+README.md         # Project documentation
 
----
+🚀 Setup (Developers)
 
-## Setup (for developers)
+To run your own instance:
 
-If you want to run your own version:
+Create a Hugging Face account
+ and generate a Fine-Grained Access Token.
 
-1. Create a Hugging Face account and generate a **Fine-Grained Access Token**.
-2. Create a new Hugging Face Space.
-3. Add the token in **Settings → Secrets** with name `HF_TOKEN`.
-4. Upload `app.py` and `requirements.txt` to the Space.
-5. Run the Space — your chatbot should now respond to messages.
+Create a new Hugging Face Space.
 
----
+Add your token in Settings → Secrets with the name HF_TOKEN.
 
-## Dependencies
+Upload app.py and requirements.txt to the Space.
 
-```text
+Launch the Space — your chatbot should now be live! 🎉
+
+📦 Dependencies
+
 transformers
+
 torch
+
 gradio
+
 huggingface_hub
+
+Install locally with:
+
+pip install -r requirements.txt
